@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021", "esnext.asynciterable"],
+    "typeRoots": ["node_modules/@types", "interfaces/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@*": ["src/*"],
+      "@bin/*": ["bin/*"],
+      "@http/*": ["http/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@Infrastructure/*": ["src/Infrastructure/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", "bin/**/*.ts", "http/**/*.ts", "interfaces/**/*.ts", ".env"],
+  "exclude": ["node_modules"]
+}
