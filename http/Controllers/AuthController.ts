@@ -57,8 +57,6 @@ class AuthController {
       return res.send({ success: false, message: validate.error.errors[0].message });
     }
 
-    return res.send("");
-
     const user = await UserModel.exists({ email });
     if (user) return res.send({ success: false, message: "This email is already registered" });
 
